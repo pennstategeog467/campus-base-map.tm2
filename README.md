@@ -1,3 +1,3 @@
 #Campus Base Map
 
-Map designed in Mapbox Studio. Integrated OPP and OSM data.
+Map designed in Mapbox Studio. Integrates OPP and OSM data.
