@@ -1,0 +1,62 @@
+_prefs: 
+  mapid: aarondennis.f6516522
+  saveCenter: true
+_properties: {}
+attribution: The Pennsylvania State University
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -77.8611
+  - 40.812
+  - 17
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: 
+  - PSU_OPP_Boundary201402
+  - PSU_OPP_Misc_paved201402
+  - landcover
+  - landuse
+  - contour
+  - hillshade
+  - waterway
+  - water
+  - aeroway
+  - barrier_line
+  - tunnel
+  - road
+  - bridge
+  - building
+  - landuse_overlay
+  - admin
+  - PSU_OPP_Planting_Beds201402
+  - PSU_OPP_Parking201402
+  - PSU_OPP_Roads_unpaved201402
+  - PSU_OPP_Roads_minor201402
+  - PSU_OPP_Roads_major201402
+  - PSU_OPP_Sidewalks201402
+  - PSU_OPP_Parking_Stripes201402
+  - PSU_OPP_Crosswalks_ln201402
+  - PSU_OPP_Crosswalks_poly201402
+  - PSU_OPP_Recreation201402
+  - PSU_OPP_Walls201402
+  - PSU_OPP_Buildings201402
+  - trees
+  - state_label
+  - housenum_label
+  - poi_label
+  - water_label
+  - waterway_label
+  - road_label
+maxzoom: 19
+minzoom: 15
+name: OPP Data Campus Map
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6,aarondennis.a2d9671d,aarondennis.8e4f6b3d"
+styles: 
+  - style.mss
+  - basemap.mss
+  - labels.mss
+template: ''
