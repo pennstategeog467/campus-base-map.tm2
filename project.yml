@@ -1,5 +1,5 @@
 _prefs: 
-  mapid: aarondennis.f6516522
+  mapid: aarondennis.campus-map
   saveCenter: true
 _properties: {}
 attribution: The Pennsylvania State University
@@ -9,8 +9,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -77.8611
-  - 40.812
+  - -77.8642
+  - 40.7966
   - 17
 description: ''
 format: "png8:m=h"
@@ -44,7 +44,8 @@ layers:
   - PSU_OPP_Recreation201402
   - PSU_OPP_Walls201402
   - PSU_OPP_Buildings201402
-  - trees
+  - Roof_Detail_Lines
+  - Trees
   - state_label
   - housenum_label
   - poi_label
@@ -53,10 +54,12 @@ layers:
   - road_label
 maxzoom: 19
 minzoom: 15
-name: OPP Data Campus Map
-source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6,aarondennis.a2d9671d,aarondennis.8e4f6b3d"
+name: OPP Data Campus Map - Patterns & Trees
+source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6,aarondennis.a2d9671d,aarondennis.8e4f6b3d,jldifrisco.c69dcc65,aarondennis.734664d3"
 styles: 
   - style.mss
   - basemap.mss
   - labels.mss
+  - Trees.mss
+  - Rooflines.mss
 template: ''

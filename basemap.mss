@@ -1,15 +1,16 @@
 @motorway_case: #ccc;
 @motorway_fill: #ccc;
 @rail: #666;
-@land: #f8f8c8;
-@buildings: #a3a3be;
+@land: #f2f1c5;
+@buildings: #ececf1;
 
 #landuse {
   [class='pitch'] {
-    polygon-fill: #9ed691;
+    polygon-fill: #a5d79a;
+     polygon-smooth: 0.025;
   }
   [type='fairway'] {
-    polygon-fill: #b0e4b0;
+    polygon-fill: #b9efb9;
     polygon-smooth: 0.8;
   }
   [type='green'] {
@@ -227,13 +228,13 @@
   
 #landcover {
   polygon-opacity: 0.3;
-  polygon-smooth: 0.5;
+  polygon-smooth: 0.1;
   image-filters: agg-stack-blur(2,2);
   image-filters-inflate: true;
   ["class"="wood"] { polygon-fill: #7dc47d; }
   ["class"="scrub"] { polygon-fill: #c6e2a6; }
   ["class"="grass"] { polygon-fill: #d4efb6; }
-  ["class"="crop"] { polygon-fill: #fdfbcb; }
+  ["class"="crop"] { polygon-fill: #b8ebe9; }
 }
 
 #hillshade {
@@ -244,9 +245,10 @@
 }
 
 #contour {
-  line-color: #e4c3f6;
+  line-color: #48464a;
   line-width: 0.8;
   line-opacity: 0.4;
   image-filters: agg-stack-blur(1,1);
   image-filters-inflate: true;
 }
+

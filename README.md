@@ -1,3 +1,3 @@
-mapbox-studio-default-style
-===========================
-Default style used by new style projects in Mapbox Studio.
+#Campus Base Map
+
+Map designed in Mapbox Studio. Integrates OPP and OSM data.

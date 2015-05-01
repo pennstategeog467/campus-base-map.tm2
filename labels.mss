@@ -35,5 +35,5 @@
 #poi_label [zoom>15] [maki!='marker'] {
   marker-fill:#ffffff;
   marker-line-color: black;
-  marker-file:url('icons/[maki]-18.svg');
+  marker-file:url('icons/[maki]-18.svg'); 
 }

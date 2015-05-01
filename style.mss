@@ -1,7 +1,7 @@
 Map {
   background-color: #f9fddc;
   ::pattern { 
-    background-image:url("grass.png");
+    background-image:url("grass2.png");
     background-image-comp-op: multiply;
     background-image-opacity: 0.2;
   }
@@ -9,20 +9,38 @@ Map {
 }
 
 #PSU_OPP_Boundary201402 {
-  polygon-fill: #deffd6;
-  polygon-opacity: 0.3;
+  polygon-fill: #a7d79c;
+  polygon-opacity: 0.5;
+  comp-op: multiply;
 }
 
 #PSU_OPP_Roads_unpaved201402,
 #PSU_OPP_Misc_paved201402,
-#PSU_OPP_Parking201402,
+#PSU_OPP_Parking201402 {
+   ["LAYER" = "C-PKNG-BITUM"] {
+      ::fill { polygon-fill: #626363; }
+      ::pattern {
+        polygon-pattern-file: url("wall4.png");
+        polygon-pattern-alignment: local;
+        polygon-pattern-opacity: 0.5;
+        comp-op: overlay;
+        image-filters: agg-stack-blur(1,1);
+      }
+       }
+    }
 #PSU_OPP_Roads_major201402,
 #PSU_OPP_Roads_minor201402 {
-  polygon-fill: #ccc;
-  image-filters: agg-stack-blur(2,2);
-  image-filters-inflate: true;
-}
-
+   ["LAYER" = "C-ROAD-MAJOR-BITUM"] {
+      ::fill { polygon-fill: #626363; }
+      ::pattern {
+        polygon-pattern-file: url("wall4.png");
+        polygon-pattern-alignment: local;
+        polygon-pattern-opacity: 0.5;
+        comp-op: overlay;
+        image-filters: agg-stack-blur(1,1);
+      }
+       }
+    }
 #PSU_OPP_Parking_Stripes201402,
 #PSU_OPP_Crosswalks_ln201402,
 #PSU_OPP_Crosswalks_poly201402, {
@@ -45,8 +63,17 @@ Map {
 }
 
 #PSU_OPP_Planting_Beds201402 {
-  polygon-fill: #cbb9b4;
-}
+   ["LAYER" = "L-PLNT-BED"] {
+      ::fill { polygon-fill: #437335; }
+      ::pattern {
+        polygon-pattern-file: url("rect4485.png");
+        polygon-pattern-alignment:global;
+        polygon-pattern-opacity: 1.0;
+        comp-op:   soft-light;
+        image-filters: agg-stack-blur(1,1);
+              }
+       }
+    }
 
 #PSU_OPP_Sidewalks201402 {
     ::shadow {
@@ -60,12 +87,12 @@ Map {
   ::fill {
     polygon-fill: #ede1c9;
     ["LAYER" = "L-SITE-WALK-PAVER"] {
-      ::fill { polygon-fill: #f4c7c7; }
+      ::fill { polygon-fill: #a35d57; }
       ::pattern {
         polygon-pattern-file: url("pavers.png");
         polygon-pattern-alignment: local;
-        polygon-pattern-opacity: 0.2;
-        comp-op: multiply;
+        polygon-pattern-opacity: 0.3;
+        comp-op: overlay;
         image-filters: agg-stack-blur(1,1);
       }
     }
@@ -82,8 +109,8 @@ Map {
 }
 
 #PSU_OPP_Walls201402 {
-  building-height: 0.3;
-  building-fill: #bbb;
+  building-height: 0.5;
+  building-fill: #666464;
 }
 
 #PSU_OPP_Buildings201402 {
@@ -97,7 +124,7 @@ Map {
     ["BLDG_ABBR" = "SWM"] {
       building-fill-opacity: 0;
       ::fill {
-        polygon-fill: #a1dfff; 
+        polygon-fill: #5da6cb; 
       }
       ::pattern {
         polygon-pattern-file: url("grass.png");
@@ -108,8 +135,8 @@ Map {
         building-fill-opacity: 0;
       }
     }
-    building-height: 2;
-    building-fill: #3a4b81;
+    building-height: 1.5;
+    building-fill: #222c4a;
   }
 }
 
