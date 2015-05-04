@@ -1,9 +1,19 @@
+#Trees [zoom>17]{
+  marker-file: url("tree10.svg");
+  marker-allow-overlap: true;
+  marker-ignore-placement: true;
+  marker-transform: scale(00.1,00.1);
+  marker-width: 200;
+  marker-fill-opacity: .2;
+  //image-filters: agg-stack-blur(4,4);
+}
+
 #Trees["TYPE"="D"] [zoom=19] {
   marker-file: url("tree10.svg");
   marker-allow-overlap: true;
   marker-ignore-placement: true;
   marker-transform: scale(00.1,00.1);
-  marker-width: [SPREAD] * 10;
+  marker-width: [SPREAD] * 10 + 1;
   marker-fill-opacity: .4;
 
 }
@@ -13,7 +23,7 @@
   marker-allow-overlap: true;
   marker-ignore-placement: true;
   marker-transform: scale(00.1,00.1);
-  marker-width: [SPREAD] * 5;
+  marker-width: [SPREAD] * 5 + 1;
   marker-fill-opacity: .4;
 
 }
@@ -23,7 +33,7 @@
   marker-allow-overlap: true;
   marker-ignore-placement: true;
   marker-transform: scale(00.1,00.1);
-  marker-width: [SPREAD] * 2;
+  marker-width: [SPREAD] * 2 + 1;
   marker-fill-opacity: .4;
 
 }
@@ -35,7 +45,7 @@
   marker-allow-overlap: true;
   marker-ignore-placement: true;
   marker-transform: scale(00.1,00.1);
-  marker-width: [SPREAD] * 10;
+  marker-width: [SPREAD] * 10 + 1;
   marker-fill-opacity: .4;
 
 }
@@ -45,7 +55,7 @@
   marker-allow-overlap: true;
   marker-ignore-placement: true;
   marker-transform: scale(00.1,00.1);
-  marker-width: [SPREAD] * 5;
+  marker-width: [SPREAD] * 5 + 1;
   marker-fill-opacity: .4;
 
 }
@@ -55,7 +65,7 @@
   marker-allow-overlap: true;
   marker-ignore-placement: true;
   marker-transform: scale(00.1,00.1);
-  marker-width: [SPREAD] * 2;
+  marker-width: [SPREAD] * 2 + 1;
   marker-fill-opacity: .4;
 
 }

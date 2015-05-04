@@ -30,7 +30,6 @@ Map {
     }
 #PSU_OPP_Roads_major201402,
 #PSU_OPP_Roads_minor201402 {
-   ["LAYER" = "C-ROAD-MAJOR-BITUM"] {
       ::fill { polygon-fill: #626363; }
       ::pattern {
         polygon-pattern-file: url("wall4.png");
@@ -39,8 +38,8 @@ Map {
         comp-op: overlay;
         image-filters: agg-stack-blur(1,1);
       }
-       }
-    }
+ }
+
 #PSU_OPP_Parking_Stripes201402,
 #PSU_OPP_Crosswalks_ln201402,
 #PSU_OPP_Crosswalks_poly201402, {
@@ -64,13 +63,13 @@ Map {
 
 #PSU_OPP_Planting_Beds201402 {
    ["LAYER" = "L-PLNT-BED"] {
-      ::fill { polygon-fill: #437335; }
+      ::fill { polygon-fill: #716150; }
       ::pattern {
         polygon-pattern-file: url("rect4485.png");
         polygon-pattern-alignment:global;
         polygon-pattern-opacity: 1.0;
         comp-op:   soft-light;
-        image-filters: agg-stack-blur(1,1);
+        //image-filters: agg-stack-blur(5,5);
               }
        }
     }
@@ -91,9 +90,9 @@ Map {
       ::pattern {
         polygon-pattern-file: url("pavers.png");
         polygon-pattern-alignment: local;
-        polygon-pattern-opacity: 0.3;
+        polygon-pattern-opacity: 0.5;
         comp-op: overlay;
-        image-filters: agg-stack-blur(1,1);
+        //image-filters: agg-stack-blur(1,1);
       }
     }
     ["LAYER" = "L-SITE-WALK-BITUM"] {

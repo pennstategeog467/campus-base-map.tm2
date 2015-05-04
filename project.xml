@@ -3,13 +3,13 @@
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-image="grass2.png" background-image-comp-op="multiply" background-image-opacity="0.2" background-color="#f9fddc">
 
 <Parameters>
-  <Parameter name="attribution"><![CDATA[The Pennsylvania State University]]></Parameter>
+  <Parameter name="attribution"><![CDATA[The Pennsylvania State University, OpenStreetMap]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-77.8642,40.7966,17</Parameter>
+  <Parameter name="center">-77.8688,40.7938,18</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">19</Parameter>
   <Parameter name="minzoom">15</Parameter>
-  <Parameter name="name"><![CDATA[OPP Data Campus Map - Patterns & Trees]]></Parameter>
+  <Parameter name="name"><![CDATA[Campus Base Map]]></Parameter>
   <Parameter name="source"><![CDATA[mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6,aarondennis.a2d9671d,aarondennis.8e4f6b3d,jldifrisco.c69dcc65,aarondennis.734664d3]]></Parameter>
 </Parameters>
 
@@ -1746,7 +1746,7 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="PSU_OPP_Planting_Beds201402-pattern" filter-mode="first" image-filters="agg-stack-blur(1,1)" comp-op="soft-light">
+<Style name="PSU_OPP_Planting_Beds201402-pattern" filter-mode="first" comp-op="soft-light">
   <Rule>
     <Filter>([LAYER] = 'L-PLNT-BED')</Filter>
     <PolygonPatternSymbolizer file="rect4485.png" alignment="global" opacity="1" />
@@ -1755,7 +1755,7 @@
 <Style name="PSU_OPP_Planting_Beds201402-fill" filter-mode="first">
   <Rule>
     <Filter>([LAYER] = 'L-PLNT-BED')</Filter>
-    <PolygonSymbolizer fill="#437335" />
+    <PolygonSymbolizer fill="#716150" />
   </Rule>
 </Style>
 <Layer name="PSU_OPP_Planting_Beds201402"
@@ -1799,13 +1799,11 @@
 
 <Style name="PSU_OPP_Roads_minor201402-pattern" filter-mode="first" image-filters="agg-stack-blur(1,1)" comp-op="overlay">
   <Rule>
-    <Filter>([LAYER] = 'C-ROAD-MAJOR-BITUM')</Filter>
     <PolygonPatternSymbolizer file="wall4.png" alignment="local" opacity="0.5" />
   </Rule>
 </Style>
 <Style name="PSU_OPP_Roads_minor201402-fill" filter-mode="first">
   <Rule>
-    <Filter>([LAYER] = 'C-ROAD-MAJOR-BITUM')</Filter>
     <PolygonSymbolizer fill="#626363" />
   </Rule>
 </Style>
@@ -1816,13 +1814,11 @@
 
 <Style name="PSU_OPP_Roads_major201402-pattern" filter-mode="first" image-filters="agg-stack-blur(1,1)" comp-op="overlay">
   <Rule>
-    <Filter>([LAYER] = 'C-ROAD-MAJOR-BITUM')</Filter>
     <PolygonPatternSymbolizer file="wall4.png" alignment="local" opacity="0.5" />
   </Rule>
 </Style>
 <Style name="PSU_OPP_Roads_major201402-fill" filter-mode="first">
   <Rule>
-    <Filter>([LAYER] = 'C-ROAD-MAJOR-BITUM')</Filter>
     <PolygonSymbolizer fill="#626363" />
   </Rule>
 </Style>
@@ -1831,10 +1827,10 @@
     <StyleName>PSU_OPP_Roads_major201402-fill</StyleName>
     <StyleName>PSU_OPP_Roads_major201402-pattern</StyleName>  </Layer>
 
-<Style name="PSU_OPP_Sidewalks201402-fill/pattern" filter-mode="first" image-filters="agg-stack-blur(1,1)" comp-op="overlay">
+<Style name="PSU_OPP_Sidewalks201402-fill/pattern" filter-mode="first" comp-op="overlay">
   <Rule>
     <Filter>([LAYER] = 'L-SITE-WALK-PAVER')</Filter>
-    <PolygonPatternSymbolizer file="pavers.png" alignment="local" opacity="0.3" />
+    <PolygonPatternSymbolizer file="pavers.png" alignment="local" opacity="0.5" />
   </Rule>
 </Style>
 <Style name="PSU_OPP_Sidewalks201402-fill/fill" filter-mode="first">
@@ -1982,16 +1978,16 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
-    <LineSymbolizer geometry-transform="translate(0,-5)" stroke="#abb0be" stroke-width="0.45" />
+    <LineSymbolizer geometry-transform="translate(0,-5)" stroke="#8c92a0" stroke-width="0.45" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
-    <LineSymbolizer geometry-transform="translate(0,-10)" stroke="#abb0be" stroke-width="0.45" />
+    <LineSymbolizer geometry-transform="translate(0,-10)" stroke="#8c92a0" stroke-width="0.45" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750</MaxScaleDenominator>
-    <LineSymbolizer stroke="#abb0be" stroke-width="0.45" />
+    <LineSymbolizer stroke="#8c92a0" stroke-width="0.45" />
   </Rule>
 </Style>
 <Layer name="Roof_Detail_Lines"
@@ -2003,37 +1999,51 @@
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([TYPE] = 'E')</Filter>
-    <MarkersSymbolizer file="evergreen.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*2" fill-opacity="0.4" />
+    <MarkersSymbolizer file="evergreen.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*2+1" fill-opacity="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <Filter>([TYPE] = 'E')</Filter>
-    <MarkersSymbolizer file="evergreen.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*5" fill-opacity="0.4" />
+    <MarkersSymbolizer file="evergreen.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*5+1" fill-opacity="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
     <Filter>([TYPE] = 'E')</Filter>
-    <MarkersSymbolizer file="evergreen.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*10" fill-opacity="0.4" />
+    <MarkersSymbolizer file="evergreen.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*10+1" fill-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750</MaxScaleDenominator>
+    <Filter>([TYPE] = 'E')</Filter>
+    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="200" fill-opacity="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([TYPE] = 'D')</Filter>
-    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*2" fill-opacity="0.4" />
+    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*2+1" fill-opacity="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
     <Filter>([TYPE] = 'D')</Filter>
-    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*5" fill-opacity="0.4" />
+    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*5+1" fill-opacity="0.4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
     <Filter>([TYPE] = 'D')</Filter>
-    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*10" fill-opacity="0.4" />
+    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="[SPREAD]*10+1" fill-opacity="0.4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750</MaxScaleDenominator>
+    <Filter>([TYPE] = 'D')</Filter>
+    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="200" fill-opacity="0.2" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <MarkersSymbolizer file="tree10.svg" allow-overlap="true" ignore-placement="true" transform="scale(0.1,0.1)" width="200" fill-opacity="0.2" />
   </Rule>
 </Style>
 <Layer name="Trees"

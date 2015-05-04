@@ -2,16 +2,16 @@ _prefs:
   mapid: aarondennis.campus-map
   saveCenter: true
 _properties: {}
-attribution: The Pennsylvania State University
+attribution: The Pennsylvania State University, OpenStreetMap
 bounds: 
   - -180
   - -85.0511
   - 180
   - 85.0511
 center: 
-  - -77.8642
-  - 40.7966
-  - 17
+  - -77.8688
+  - 40.7938
+  - 18
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
@@ -54,7 +54,7 @@ layers:
   - road_label
 maxzoom: 19
 minzoom: 15
-name: OPP Data Campus Map - Patterns & Trees
+name: Campus Base Map
 source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v6,aarondennis.a2d9671d,aarondennis.8e4f6b3d,jldifrisco.c69dcc65,aarondennis.734664d3"
 styles: 
   - style.mss
